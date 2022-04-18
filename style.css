@@ -1,0 +1,123 @@
+body {
+  background-color: #f27777;
+  font-family: Colonna MT;
+}
+
+.container {
+  width: calc(100% - 12.5px);
+  background-color: #f27777;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.text {
+  margin: 50px;
+  font-size: 65px;
+  text-align: center;
+  letter-spacing: 2.5px;
+}
+
+.page-container {
+  width: 80%;
+  margin: auto;
+  index: 10;
+  margin-top: 200px;
+  border: 2px solid black;
+}
+
+.div-titles {
+  padding-left: 20px;
+  border: 1px solid;
+  margin: 5px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  transition: box-shadow .5s;
+  width: 300px;
+  margin: 0 50px 30px 50px;
+  padding: 10px;
+  height: 500px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 4px #bd5d5d, -5px -5px 4px #ff9191;
+}
+
+img {
+  width: 250px;
+  border: 1px solid;
+}
+
+.novel-title {
+  font-family: Comfortaa;
+  height: 50px;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  float: right;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  margin: 10px;
+  background: none;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta a {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
